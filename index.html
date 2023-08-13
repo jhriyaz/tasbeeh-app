@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="https://kit.fontawesome.com/f403df9142.js" crossorigin="anonymous"></script>
 </head>
 <body class="w-[1400px] m-auto">
     <header>
@@ -62,41 +62,46 @@
         <section class="container flex flex-col gap-5 lg:flex-row lg:justify-around items-center pt-24">
             <div class="card w-96 bg-neutral text-neutral-content">
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title">সুবহানাল্লাহ</h2>
-                    <p>We are using cookies for no reason.</p>
-                    <input type="range" min="0" max="33" value="0" class="range range-error" />
+                    <h2 class="card-title"><i class="fa-solid fa-star-and-crescent"></i>সুবহানাল্লাহ</h2>
+                    <p>Counted- <span class="text-3xl text-red-900">0</span> times</p>
+                    <input type="range" min="0" max="33" value="0" class="range range-error mb-3" disabled />
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Increment</button>
-                        <button class="btn btn-ghost bg-red-400 text-gray-300">decrement</button>
+                        <button class="btn btn-primary">Increment<i class="fa-solid fa-plus"></i></button>
+                        <button class="btn btn-ghost bg-red-400 text-gray-300">decrement<i class="fa-solid fa-minus"></i></button>
                     </div>
                 </div>
             </div>
             <div class="card w-96 bg-neutral text-neutral-content">
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title">আলহামদুলিল্লাহ</h2>
+                    <h2 class="card-title mb-3"><i class="fa-solid fa-mosque"></i>আলহামদুলিল্লাহ</h2>
                     
-                    <p>We are using cookies for no reason.</p>
-                    <input type="range" min="0" max="33" value="0" class="range range-error" />
+                    <p>Counted- <span class="text-3xl text-red-900">0</span> times</p>
+                    <input type="range" min="0" max="33" value="0" class="range range-error mb-3" disabled/>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Increment</button>
-                        <button class="btn btn-ghost bg-red-400 text-gray-300">decrement</button>
+                        <button class="btn btn-primary">Increment<i class="fa-solid fa-plus"></i></button>
+                        <button class="btn btn-ghost bg-red-400 text-gray-300">decrement<i class="fa-solid fa-minus"></i></button>
                     </div>
                 </div>
             </div>
             <div class="card w-96 bg-neutral text-neutral-content">
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title">আল্লাহু আকবার </h2>
-                    <p>We are using cookies for no reason.</p>
-                    <input type="range" min="0" max="33" value="0" class="range range-error" />
+                    <h2 class="card-title"><i class="fa-solid fa-kaaba"></i>আল্লাহু আকবার </h2>
+                    <p>Counted- <span class="text-3xl text-red-900">0</span> times</p>
+                    <input type="range" min="0" max="33" value="0" class="range range-error mb-3" disabled/>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Increment</button>
-                        <button class="btn btn-ghost bg-red-400 text-gray-300">decrement</button>
+                        <button class="btn btn-primary">Increment<i class="fa-solid fa-plus"></i></button>
+                        <button class="btn btn-ghost bg-red-400 text-gray-300">decrement<i class="fa-solid fa-minus"></i></button>
                     </div>
                 </div>
             </div>
         </section>
-    
+        <div class="flex justify-center items-center pt-10">
+            <button class="btn btn-warning px-10 text-lg"><i class="fa-solid fa-rotate"></i>Reset All</button>
+        </div>
     </main>
+    <footer class="text-center pt-10 lg:pt-80">
+        Designed by - <span class="text-green-300">Md Jahid Hasan </span>
+    </footer>
     <script src="./js/main.js"></script>
 </body>
 
