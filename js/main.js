@@ -2,7 +2,7 @@ let countValue1 = 0
 let rangeProgress1 = document.getElementById('rangeProgress1')
 document.getElementById('btnIncrement1').addEventListener('click', function () {
     countValue1 += 1;
-    if (countValue1 <= 33 && countValue1 >= 1) {
+    if (countValue1 <= 33) {
         document.getElementById('numberCount1').innerText = countValue1;
         rangeProgress1.value = countValue1;
         rangeProgress1.classList.replace('range-error', 'range-primary')
@@ -17,7 +17,7 @@ document.getElementById('btnIncrement1').addEventListener('click', function () {
 })
 document.getElementById('btnDecrement1').addEventListener('click', function () {
     countValue1 -= 1;
-    if (countValue1 <= 33 && countValue1 >= 0) {
+    if (countValue1 >= 0) {
         document.getElementById('numberCount1').innerText = countValue1;
         rangeProgress1.value = countValue1;
         rangeProgress1.classList.replace('range-success', 'range-primary')
@@ -41,7 +41,7 @@ document.getElementById('btnIncrement2').addEventListener('click', function () {
         countValue2=0
         return alert('say সুবহানাল্লাহ 33 times first')
     }
-    if (countValue2 <= 33 && countValue2 >= 1) {
+    if (countValue2 <= 33) {
         document.getElementById('numberCount2').innerText = countValue2;
         rangeProgress2.value = countValue2;
         rangeProgress2.classList.replace('range-error', 'range-primary')
@@ -56,7 +56,7 @@ document.getElementById('btnIncrement2').addEventListener('click', function () {
 })
 document.getElementById('btnDecrement2').addEventListener('click', function () {
     countValue2 -= 1;
-    if (countValue2 <= 33 && countValue2 >= 0) {
+    if (countValue2 >= 0) {
         document.getElementById('numberCount2').innerText = countValue2;
         rangeProgress2.value = countValue2;
         rangeProgress2.classList.replace('range-success', 'range-primary')
@@ -82,22 +82,22 @@ document.getElementById('btnIncrement3').addEventListener('click', function () {
        return alert('say আলহামদুলিল্লাহ 33 times first');
         
     }
-    if (countValue3 <= 33 && countValue3 >= 1) {
+    if (countValue3 <= 34) {
         document.getElementById('numberCount3').innerText = countValue3;
         rangeProgress3.value = countValue3;
         rangeProgress3.classList.replace('range-error', 'range-primary')
     }
-    if (countValue3 === 33) {
+    if (countValue3 === 34) {
         rangeProgress3.classList.replace('range-primary', 'range-success')
     }
-    if (countValue3 > 33) {
+    if (countValue3 > 34) {
         alert('please click on reset button')
-        countValue3 = 33
+        countValue3 = 34
     }
 })
 document.getElementById('btnDecrement3').addEventListener('click', function () {
     countValue3 -= 1;
-    if (countValue3 <= 33 && countValue3 >= 0) {
+    if (countValue3 >= 0) {
         document.getElementById('numberCount3').innerText = countValue3;
         rangeProgress3.value = countValue3;
         rangeProgress3.classList.replace('range-success', 'range-primary')
