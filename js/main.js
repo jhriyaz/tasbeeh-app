@@ -38,7 +38,7 @@ let rangeProgress2 = document.getElementById('rangeProgress2')
 document.getElementById('btnIncrement2').addEventListener('click', function () {
     countValue2 += 1;
     if(countValue1!==33){
-        return alert('say আলহামদুলিল্লাহ 33 times first')
+        return alert('say সুবহানাল্লাহ 33 times first')
     }
     if (countValue2 <= 33 && countValue2 >= 1) {
         document.getElementById('numberCount2').innerText = countValue2;
