@@ -11,6 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/f403df9142.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="w-[1400px] m-auto">
     <header>
         <nav>
@@ -63,34 +64,43 @@
             <div class="card w-96 bg-neutral text-neutral-content">
                 <div class="card-body items-center text-center">
                     <h2 class="card-title"><i class="fa-solid fa-star-and-crescent"></i>সুবহানাল্লাহ</h2>
-                    <p>Counted- <span class="text-3xl text-red-900">0</span> times</p>
-                    <input type="range" min="0" max="33" value="0" class="range range-error mb-3" disabled />
+                    <p>Counted : <span id="numberCount1" class="text-3xl text-red-900">0</span> times</p>
+                    <input type="range" min="0" max="33" value="0" class="range range-error mb-3" id="rangeProgress1"
+                        disabled />
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Increment<i class="fa-solid fa-plus"></i></button>
-                        <button class="btn btn-ghost bg-red-400 text-gray-300">decrement<i class="fa-solid fa-minus"></i></button>
+                        <button class="btn btn-primary" id="btnIncrement1">Increment<i
+                                class="fa-solid fa-plus"></i></button>
+                        <button class="btn btn-ghost bg-red-400 text-gray-300">decrement<i
+                                class="fa-solid fa-minus"></i></button>
                     </div>
                 </div>
             </div>
             <div class="card w-96 bg-neutral text-neutral-content">
                 <div class="card-body items-center text-center">
                     <h2 class="card-title mb-3"><i class="fa-solid fa-mosque"></i>আলহামদুলিল্লাহ</h2>
-                    
-                    <p>Counted- <span class="text-3xl text-red-900">0</span> times</p>
-                    <input type="range" min="0" max="33" value="0" class="range range-error mb-3" disabled/>
+
+                    <p>Counted : <span id="numberCount2" class="text-3xl text-red-900">0</span> times</p>
+                    <input type="range" min="0" max="33" value="0" class="range range-error mb-3 " id="rangeProgress2"
+                        disabled />
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Increment<i class="fa-solid fa-plus"></i></button>
-                        <button class="btn btn-ghost bg-red-400 text-gray-300">decrement<i class="fa-solid fa-minus"></i></button>
+                        <button class="btn btn-primary" id="btnIncrement1">Increment<i
+                                class="fa-solid fa-plus"></i></button>
+                        <button class="btn btn-ghost bg-red-400 text-gray-300">decrement<i
+                                class="fa-solid fa-minus"></i></button>
                     </div>
                 </div>
             </div>
             <div class="card w-96 bg-neutral text-neutral-content">
                 <div class="card-body items-center text-center">
                     <h2 class="card-title"><i class="fa-solid fa-kaaba"></i>আল্লাহু আকবার </h2>
-                    <p>Counted- <span class="text-3xl text-red-900">0</span> times</p>
-                    <input type="range" min="0" max="33" value="0" class="range range-error mb-3" disabled/>
+                    <p>Counted : <span id="numberCount3" class="text-3xl text-red-900">0</span> times</p>
+                    <input type="range" min="0" max="33" value="0" class="range range-error mb-3" id="rangeProgress3"
+                        disabled />
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Increment<i class="fa-solid fa-plus"></i></button>
-                        <button class="btn btn-ghost bg-red-400 text-gray-300">decrement<i class="fa-solid fa-minus"></i></button>
+                        <button class="btn btn-primary" id="btnIncrement1">Increment<i
+                                class="fa-solid fa-plus"></i></button>
+                        <button class="btn btn-ghost bg-red-400 text-gray-300">decrement<i
+                                class="fa-solid fa-minus"></i></button>
                     </div>
                 </div>
             </div>
@@ -103,6 +113,9 @@
         Designed by - <span class="text-green-300">Md Jahid Hasan </span>
     </footer>
     <script src="./js/main.js"></script>
+    <script>
+     
+    </script>
 </body>
 
 </html>
