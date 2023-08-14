@@ -34,7 +34,7 @@ document.getElementById('btnIncrement1').addEventListener('click', function () {
 })
 document.getElementById('btnDecrement1').addEventListener('click', function () {
     countValue1 -= 1;
-    autoPLay.currentTime=0
+    decrementAutoPLay.currentTime=0
     decrementAutoPLay.play()
     if (countValue1 >= 0) {
         document.getElementById('numberCount1').innerText = countValue1;
@@ -85,7 +85,7 @@ document.getElementById('btnIncrement2').addEventListener('click', function () {
 })
 document.getElementById('btnDecrement2').addEventListener('click', function () {
     countValue2 -= 1;
-    autoPLay.currentTime=0
+    decrementAutoPLay.currentTime=0
     decrementAutoPLay.play()
     if (countValue2 >= 0) {
         document.getElementById('numberCount2').innerText = countValue2;
@@ -135,7 +135,7 @@ document.getElementById('btnIncrement3').addEventListener('click', function () {
 })
 document.getElementById('btnDecrement3').addEventListener('click', function () {
     countValue3 -= 1;
-    autoPLay.currentTime=0
+    decrementAutoPLay.currentTime=0
     decrementAutoPLay.play()
     if (countValue3 >= 0) {
         document.getElementById('numberCount3').innerText = countValue3;
