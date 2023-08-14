@@ -21,7 +21,7 @@ document.getElementById('btnIncrement1').addEventListener('click', function () {
     }
     if (countValue1 === 33) {
         rangeProgress1.classList.replace('range-primary', 'range-success')
-        errorContent.innerText='please start saying " আলহামদুলিল্লাহ "'
+        errorContent.innerText='Please start saying " আলহামদুলিল্লাহ "'
         errorContent.style.background='#00800047'
         errorBox.classList.remove('hidden')
       
@@ -45,7 +45,7 @@ document.getElementById('btnDecrement1').addEventListener('click', function () {
         rangeProgress1.classList.replace('range-primary', 'range-error')
     }
     if (countValue1 < 0) {
-        errorContent.innerText='say " সুবহানাল্লাহ " and start clicking Increment'
+        errorContent.innerText='Say " সুবহানাল্লাহ " and start clicking Increment'
         errorContent.style.background='#762d2d4a'
         errorBox.classList.remove('hidden')
         countValue1 = 0
@@ -63,7 +63,7 @@ document.getElementById('btnIncrement2').addEventListener('click', function () {
     if(countValue1!==33){
         countValue2=0
         errorBox.classList.remove('hidden')
-        errorContent.innerText='say " সুবহানাল্লাহ " 33 times first';
+        errorContent.innerText='Say " সুবহানাল্লাহ " 33 times first';
         errorContent.style.background='#762d2d4a'
         return
         
@@ -78,7 +78,7 @@ document.getElementById('btnIncrement2').addEventListener('click', function () {
         rangeProgress2.classList.replace('range-primary', 'range-success')
     }
     if (countValue2 > 33) {
-        errorContent.innerText='please start saying " আল্লাহু আকবার "'
+        errorContent.innerText='Please start saying " আল্লাহু আকবার "'
         errorContent.style.background='#00800047'
         countValue2 = 33
     }
@@ -96,7 +96,7 @@ document.getElementById('btnDecrement2').addEventListener('click', function () {
         rangeProgress2.classList.replace('range-primary', 'range-error')
     }
     if (countValue2 < 0) {
-        errorContent.innerText='say " আলহামদুলিল্লাহ " and start clicking Increment';
+        errorContent.innerText='Say " আলহামদুলিল্লাহ " and start clicking Increment';
         errorContent.style.background='#762d2d4a'
         errorBox.classList.remove('hidden')
         countValue2 = 0
@@ -114,7 +114,7 @@ document.getElementById('btnIncrement3').addEventListener('click', function () {
     autoPLay.play()
     if(countValue2!==33){
         errorBox.classList.remove('hidden')
-       errorContent.innerText='say " আলহামদুলিল্লাহ " 33 times first';
+       errorContent.innerText='Say " আলহামদুলিল্লাহ " 33 times first';
        errorContent.style.background='#762d2d4a'
        countValue3=0
        return
@@ -126,7 +126,7 @@ document.getElementById('btnIncrement3').addEventListener('click', function () {
     }
     if (countValue3 === 34) {
         rangeProgress3.classList.replace('range-primary', 'range-success')
-        errorContent.innerText='please click on reset button'
+        errorContent.innerText='Please click on reset button'
         errorContent.style.background='#00800047'
     }
     if (countValue3 > 34) {
@@ -146,7 +146,7 @@ document.getElementById('btnDecrement3').addEventListener('click', function () {
         rangeProgress3.classList.replace('range-primary', 'range-error')
     }
     if (countValue3 < 0) {
-        errorContent.innerText='say " আল্লাহু আকবার " and start clicking Increment';
+        errorContent.innerText='Say " আল্লাহু আকবার " and start clicking Increment';
         errorContent.style.background='#762d2d4a'
         errorBox.classList.remove('hidden')
         countValue3 = 0
@@ -171,4 +171,7 @@ document.getElementById('resetBtn').addEventListener('click',function(){
     rangeProgress1.classList.replace('range-primary', 'range-error')
     rangeProgress2.classList.replace('range-primary', 'range-error')
     rangeProgress3.classList.replace('range-primary', 'range-error')
+    errorContent.innerText='Reset complete'
+    errorContent.style.background='#00800047'
+    errorBox.classList.remove('hidden')
 })
