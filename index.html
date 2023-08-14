@@ -57,6 +57,11 @@
         </nav>
     </header>
     <main class="lg:w-[1400px] m-auto">
+        <div class="indicator  mt-6 lg:mx-[calc(50%-400px)] mx-[calc(50%-150px)] hidden" id="errorBox">
+            <span class="indicator-item badge badge-secondary"></span>
+            <div id="errorContent" class="grid place-items-center bg-[#762d2d4a] w-[300px] lg:w-[800px] p-8 justify-center items-center text-center">content</div>
+          </div>
+
 
         <section class="container flex flex-col gap-5 lg:flex-row lg:justify-around items-center pt-24">
             <div class="card w-96 bg-neutral text-neutral-content">
@@ -106,7 +111,11 @@
         <div class="flex justify-center items-center pt-28">
             <button id="resetBtn" class="btn btn-warning px-10 text-lg"><i class="fa-solid fa-rotate"></i>Reset All</button>
         </div>
+        <audio id="increamentPlay" src="/audio/increament.mp3" hidden></audio>
+        <audio id="decreamentPlay" src="/audio/decrement sound.mp3" hidden></audio>
+        <audio id="resetPlay" src="/audio/reset.mp3" hidden></audio>
     </main>
+
     <footer class="text-center pt-10 lg:pt-80 lg:w-[1400px] m-auto">
         Designed by - <span class="text-green-300">Md Jahid Hasan </span>
     </footer>
